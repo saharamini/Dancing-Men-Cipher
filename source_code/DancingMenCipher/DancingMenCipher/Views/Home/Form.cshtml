@@ -1,0 +1,72 @@
+﻿@using DancingMenCipher.Models
+
+@{
+    ViewBag.Title = "Image Form";
+}
+
+<head>
+    <script type="text/javascript">
+        window.onload = function () {
+            // Canvas
+            var length = @Html.Raw(Json.Encode(ViewData["Length"]));
+            var listofKeys = @Html.Raw(Json.Encode(ViewData["ListofKeys"]));
+            var listofValues = @Html.Raw(Json.Encode(ViewData["ListofValues"]));
+
+            var dataPoints = [];
+            for (var i = 0; i <length; i++) {
+                dataPoints.push({ y:parseInt(listofValues[i]), label:String(listofKeys[i]) });
+            }
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "Results"
+                    },
+                    data: [{dataPoints}]
+            });
+
+            chart.render();
+        }
+
+
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+    <br />
+    <p> Mouseover the chart bars to see the number of letter frequency </p>
+    <div id="chartContainer" style="height: 200px; width: 100%;"></div>
+    <br /><br />
+    <div>
+        <table class="table table-striped table-bordered">
+                <tr>
+                    @foreach (var value in (IEnumerable<string>)ViewData["ListofValues"])
+                {
+                        <td style="font-size:12px; text-align:center;">
+                            @(Convert.ToDouble(value) % 100.00) %
+                        </td>
+                    }
+                </tr>
+                <tr>
+                    @foreach (var key in (IEnumerable<string>)ViewData["ListofKeys"])
+                {
+                        <td style="font-size:14px; text-align:center;">
+                            @key
+                        </td>
+                    }
+                </tr>
+                <tr>
+                    @foreach (var alpha in (IEnumerable<char>)ViewData["PlainText"])
+                    {
+                        <td style="text-align:center;">
+                            @if (SelectTag.list.Contains(alpha)) { <img src='@string.Format("../../Content/Pictures/1{0}.png", alpha)'/>}
+                            else{<img src='@string.Format("../../Content/Pictures/{0}.png", alpha)' /> }
+                        </td>
+                        }
+                </tr>
+            </table>
+    </div>
+    <br />
+        <h4>Possible plaintext</h4>
+        @Html.TextArea("CodeBreaking", new { @rows = 5, @cols = 40, @class = "text-field" })
+    
+</body>

@@ -1,0 +1,146 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $("#Backspace").click(function () {
+            $("img").last().remove(); $("#textarea").text(function (_, txt) {
+                return txt.slice(0, -1);
+            });});
+        $("#a").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#a").val() + '.png" />'); $("#textarea").append($("#a").val().substring(1))});
+        $("#b").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#b").val() + '.png" />'); $("#textarea").append($("#b").val().substring(1)) });
+        $("#c").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#c").val() + '.png" />'); $("#textarea").append($("#c").val().substring(1)) });
+        $("#d").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#d").val() + '.png" />'); $("#textarea").append($("#d").val().substring(1)) });
+        $("#e").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#e").val() + '.png" />'); $("#textarea").append($("#e").val().substring(1)) });
+        $("#f").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#f").val() + '.png" />'); $("#textarea").append($("#f").val().substring(1))});
+        $("#g").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#g").val() + '.png" />'); $("#textarea").append($("#g").val().substring(1))});
+        $("#h").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#h").val() + '.png" />'); $("#textarea").append($("#h").val().substring(1))});
+        $("#i").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#i").val() + '.png" />'); $("#textarea").append($("#i").val().substring(1))});
+        $("#j").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#j").val() + '.png" />'); $("#textarea").append($("#j").val().substring(1))});
+        $("#k").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#k").val() + '.png" />'); $("#textarea").append($("#k").val().substring(1))});
+        $("#l").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#l").val() + '.png" />'); $("#textarea").append($("#l").val().substring(1))});
+        $("#m").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#m").val() + '.png" />'); $("#textarea").append($("#m").val().substring(1))});
+        $("#n").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#n").val() + '.png" />'); $("#textarea").append($("#n").val().substring(1))});
+        $("#o").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#o").val() + '.png" />'); $("#textarea").append($("#o").val().substring(1))});
+        $("#p").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#p").val() + '.png" />'); $("#textarea").append($("#p").val().substring(1))});
+        $("#q").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#q").val() + '.png" />'); $("#textarea").append($("#q").val().substring(1))});
+        $("#r").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#r").val() + '.png" />'); $("#textarea").append($("#r").val().substring(1))});
+        $("#s").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#s").val() + '.png" />'); $("#textarea").append($("#s").val().substring(1))});
+        $("#t").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#t").val() + '.png" />'); $("#textarea").append($("#t").val().substring(1))});
+        $("#u").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#u").val() + '.png" />'); $("#textarea").append($("#u").val().substring(1))});
+        $("#v").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#v").val() + '.png" />'); $("#textarea").append($("#v").val().substring(1))});
+        $("#w").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#w").val() + '.png" />'); $("#textarea").append($("#w").val().substring(1))});
+        $("#x").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#x").val() + '.png" />'); $("#textarea").append($("#x").val().substring(1))});
+        $("#y").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#y").val() + '.png" />'); $("#textarea").append($("#y").val().substring(1))});
+        $("#z").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#z").val() + '.png" />'); $("#textarea").append($("#z").val().substring(1))});
+        $("#A").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#A").val() + '.png" />'); $("#textarea").append($("#A").val()) });
+        $("#B").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#B").val() + '.png" />'); $("#textarea").append($("#B").val()) });
+        $("#C").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#C").val() + '.png" />'); $("#textarea").append($("#C").val()) });
+        $("#D").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#D").val() + '.png" />'); $("#textarea").append($("#D").val()) });
+        $("#E").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#E").val() + '.png" />'); $("#textarea").append($("#E").val()) });
+        $("#F").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#F").val() + '.png" />'); $("#textarea").append($("#F").val()) });
+        $("#G").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#G").val() + '.png" />'); $("#textarea").append($("#G").val()) });
+        $("#H").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#H").val() + '.png" />'); $("#textarea").append($("#H").val()) });
+        $("#I").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#I").val() + '.png" />'); $("#textarea").append($("#I").val()) });
+        $("#J").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#J").val() + '.png" />'); $("#textarea").append($("#J").val()) });
+        $("#K").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#K").val() + '.png" />'); $("#textarea").append($("#K").val()) });
+        $("#L").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#L").val() + '.png" />'); $("#textarea").append($("#L").val()) });
+        $("#M").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#M").val() + '.png" />'); $("#textarea").append($("#M").val()) });
+        $("#N").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#N").val() + '.png" />'); $("#textarea").append($("#N").val()) });
+        $("#O").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#O").val() + '.png" />'); $("#textarea").append($("#O").val()) });
+        $("#P").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#P").val() + '.png" />'); $("#textarea").append($("#P").val()) });
+        $("#Q").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#Q").val() + '.png" />'); $("#textarea").append($("#Q").val()) });
+        $("#R").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#R").val() + '.png" />'); $("#textarea").append($("#R").val()) });
+        $("#S").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#S").val() + '.png" />'); $("#textarea").append($("#S").val()) });
+        $("#T").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#T").val() + '.png" />'); $("#textarea").append($("#T").val()) });
+        $("#U").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#U").val() + '.png" />'); $("#textarea").append($("#U").val()) });
+        $("#V").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#V").val() + '.png" />'); $("#textarea").append($("#V").val()) });
+        $("#W").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#W").val() + '.png" />'); $("#textarea").append($("#W").val()) });
+        $("#X").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#X").val() + '.png" />'); $("#textarea").append($("#X").val()) });
+        $("#Y").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#Y").val() + '.png" />'); $("#textarea").append($("#Y").val()) });
+        $("#Z").click(function () { $("#textDiv").append('<img src="../../Content/Pictures/' + $("#Z").val() + '.png" />'); $("#textarea").append($("#Z").val()) });
+
+    });
+
+</script>
+
+        <br/>
+        <h4>Dancing Men Keyboard - Click on the desired image to type</h4>
+        <table class="table">
+            <tr>
+                <td><input type="image" src="~/Content/Pictures/1a.png" value="1a" id="a"></td>
+                <td><input type="image" src="~/Content/Pictures/1b.png" value="1b" id="b"></td>
+                <td><input type="image" src="~/Content/Pictures/1c.png" value="1c" id="c"></td>
+                <td><input type="image" src="~/Content/Pictures/1d.png" value="1d" id="d"></td>
+                <td><input type="image" src="~/Content/Pictures/1e.png" value="1e" id="e"></td>
+                <td><input type="image" src="~/Content/Pictures/1f.png" value="1f" id="f"></td>
+                <td><input type="image" src="~/Content/Pictures/1g.png" value="1g" id="g"></td>
+                <td><input type="image" src="~/Content/Pictures/1h.png" value="1h" id="h"></td>
+                <td><input type="image" src="~/Content/Pictures/1i.png" value="1i" id="i"></td>
+                <td><input type="image" src="~/Content/Pictures/1j.png" value="1j" id="j"></td>
+                <td><input type="image" src="~/Content/Pictures/1k.png" value="1k" id="j"></td>
+                <td><input type="image" src="~/Content/Pictures/1l.png" value="1l" id="l"></td>
+                <td><input type="image" src="~/Content/Pictures/1m.png" value="1m" id="m"></td>
+                <td><input type="image" src="~/Content/Pictures/1n.png" value="1n" id="n"></td>
+                <td><input type="image" src="~/Content/Pictures/1o.png" value="1o" id="o"></td>
+                <td><input type="image" src="~/Content/Pictures/1p.png" value="1p" id="p"></td>
+                <td><input type="image" src="~/Content/Pictures/1q.png" value="1q" id="q"></td>
+                <td><input type="image" src="~/Content/Pictures/1r.png" value="1r" id="r"></td>
+                <td><input type="image" src="~/Content/Pictures/1s.png" value="1s" id="s"></td>
+                <td><input type="image" src="~/Content/Pictures/1t.png" value="1t" id="t"></td>
+            </tr>
+            <tr>
+                <td><input type="image" src="~/Content/Pictures/1u.png" value="1u" id="u"></td>
+                <td><input type="image" src="~/Content/Pictures/1v.png" value="1v" id="v"></td>
+                <td><input type="image" src="~/Content/Pictures/1w.png" value="1w" id="w"></td>
+                <td><input type="image" src="~/Content/Pictures/1x.png" value="1x" id="x"></td>
+                <td><input type="image" src="~/Content/Pictures/1y.png" value="1y" id="y"></td>
+                <td><input type="image" src="~/Content/Pictures/1z.png" value="1z" id="z"></td>
+                <td><input type="image" src="~/Content/Pictures/A.png" value="A" id="A"></td>
+                <td><input type="image" src="~/Content/Pictures/B.png" value="B" id="B"></td>
+                <td><input type="image" src="~/Content/Pictures/C.png" value="C" id="C"></td>
+                <td><input type="image" src="~/Content/Pictures/D.png" value="D" id="D"></td>
+                <td><input type="image" src="~/Content/Pictures/E.png" value="E" id="E"></td>
+                <td><input type="image" src="~/Content/Pictures/F.png" value="F" id="F"></td>
+                <td><input type="image" src="~/Content/Pictures/G.png" value="G" id="G"></td>
+                <td><input type="image" src="~/Content/Pictures/H.png" value="H" id="H"></td>
+                <td><input type="image" src="~/Content/Pictures/I.png" value="I" id="I"></td>
+                <td><input type="image" src="~/Content/Pictures/J.png" value="J" id="J"></td>
+                <td><input type="image" src="~/Content/Pictures/K.png" value="K" id="K"></td>
+                <td><input type="image" src="~/Content/Pictures/L.png" value="L" id="L"></td>
+                <td><input type="image" src="~/Content/Pictures/M.png" value="M" id="M"></td>
+                <td><input type="image" src="~/Content/Pictures/N.png" value="N" id="N"></td>
+            </tr>
+            <tr>
+                <td><input type="image" src="~/Content/Pictures/O.png" value="O" id="O"></td>
+                <td><input type="image" src="~/Content/Pictures/P.png" value="P" id="P"></td>
+                <td><input type="image" src="~/Content/Pictures/Q.png" value="Q" id="Q"></td>
+                <td><input type="image" src="~/Content/Pictures/R.png" value="R" id="R"></td>
+                <td><input type="image" src="~/Content/Pictures/S.png" value="S" id="S"></td>
+                <td><input type="image" src="~/Content/Pictures/T.png" value="T" id="T"></td>
+                <td><input type="image" src="~/Content/Pictures/U.png" value="U" id="U"></td>
+                <td><input type="image" src="~/Content/Pictures/V.png" value="V" id="V"></td>
+                <td><input type="image" src="~/Content/Pictures/W.png" value="W" id="W"></td>
+                <td><input type="image" src="~/Content/Pictures/X.png" value="X" id="X"></td>
+                <td><input type="image" src="~/Content/Pictures/Y.png" value="Y" id="Y"></td>
+                <td><input type="image" src="~/Content/Pictures/Z.png" value="Z" id="Z"></td>
+                
+            </tr>
+        </table>
+        <div><input type="button" value="Backspace" id="Backspace" class="btn btn-info"></div><br/>
+        @using (Ajax.BeginForm("Form", "Home", new AjaxOptions { HttpMethod = "POST" }))
+        {
+            <div class="jumbotron">
+                <h4>Enter the text that you would like to analyze - use Dancing Men keyboard</h4>
+                <div style="border:solid white 2px; height:200px;">
+                    <div id="textDiv" style="padding:5px;"></div>
+                </div>
+                <!-- hidden textarea-->
+                @Html.TextArea("textarea", new { @rows = 5, @cols = 40, @class = "text-field", @id = "textarea", @style = "display:none;" })
+                <br />
+                <button class="btn btn-primary" name="command" value="LaunchAnalysis">Launch Analysis</button>
+            </div>
+        }
